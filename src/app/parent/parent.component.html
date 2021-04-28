@@ -1,0 +1,4 @@
+<h3>Parent component</h3>
+<p>Value of Child component:{{cData}}</p>
+<input type="text" #pComponent (keyup)="0">
+<app-child [parentData]="pComponent.value" (childEvent)="textbind($event)"></app-child>
